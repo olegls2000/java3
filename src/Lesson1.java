@@ -10,6 +10,7 @@ public class Lesson1 {
         int i1 = 1000;
         double d = 2000.99995555;
         //i1 = (int)d;
+        //i1 = (int)d;
         System.out.println("i1=" + i1);
         System.out.println("d=" + d);
         int i3 = 10;
