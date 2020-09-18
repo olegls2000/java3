@@ -1,6 +1,7 @@
 public class Lesson1 {
     public static void main(String[] args) {
         short s = 100;
+        short s1 = 100;
         int i = 3000;
         //i = s;
         s = (short) i;
