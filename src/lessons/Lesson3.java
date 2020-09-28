@@ -1,3 +1,5 @@
+package lessons;
+
 public class Lesson3 {
     public static void main(String[] args) {
         int[] intArray = {0, 2, 3, 10};

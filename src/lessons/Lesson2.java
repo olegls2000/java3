@@ -1,3 +1,5 @@
+package lessons;
+
 public class Lesson2 {
     public static void main(String[] args) {
         int t = 99;

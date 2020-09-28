@@ -1,3 +1,9 @@
+package lessons;
+
+
+import model.*;
+
+
 public class Lesson4 {
     public static void main(String[] args) {
         int[] unsorted = {2, 4, 7, 1, 66, 5, 8};
@@ -20,7 +26,7 @@ public class Lesson4 {
 
         Men ivan = new Men(23, "Ivan", "Director");
         Men maria = new Men("Maria", "Secretar");
-        System.out.println(maria.name);
+        System.out.println(maria.getName());
 
         Men[] people = {ivan, maria};
 
@@ -32,17 +38,19 @@ public class Lesson4 {
         System.out.println(ivan);
         System.out.println(maria);*/
         printOldestName(people);
+
+        SimpleTriangle simpleTriangle = new SimpleTriangle(2, 2, 2);
     }
 
     public static void printOldestName(Men[] people) {
         Men oldest = people[0];
         for (Men men : people) {
-            if (men.age > oldest.age) {
+            if (men.getAge() > oldest.getAge()) {
                 oldest = men;
             }
         }
-        System.out.println("Max age: " + oldest.age);
-        System.out.println("Max age name: " + oldest.name);
+        System.out.println("Max age: " + oldest.getAge());
+        System.out.println("Max age name: " + oldest.getAge());
     }
 
     public static void printLowestSalaryProfession(Men[] people) {
