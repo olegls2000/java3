@@ -7,7 +7,7 @@ import model.Programmer;
 // Recursion
 public class Lesson9 {
 
-    public static void main(String ... args) {
+    public static void main(String... args) {
         System.out.println(args);
         //0 .... n
         int n = 9;
@@ -83,7 +83,7 @@ public class Lesson9 {
         return maxLengthWord;
     }
 
-    private static String replace(String rawString, String... whatToEliminate) {
+    static String replace(String rawString, String... whatToEliminate) {
         for (String toEliminate : whatToEliminate) {
             rawString = rawString.replace(toEliminate, " ").trim();
         }

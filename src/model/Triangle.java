@@ -1,6 +1,6 @@
 package model;
 
-public class Triangle {
+public class Triangle implements Shape {
     private Point a;
     private Point b;
     private Point c;
@@ -16,11 +16,8 @@ public class Triangle {
         this.c = c;
     }
 
-    public double gaetPerimetr() {
-        double perimetr = getDistance(this.a, this.b) +
-                getDistance(this.b, this.c) +
-                getDistance(this.a, this.c);
-        return perimetr;
+    public void triangleMeth(){
+        System.out.println("Triangle specific");
     }
 
     private void checkSides(Point a, Point b, Point c) {
@@ -64,5 +61,24 @@ public class Triangle {
 
     public void setC(Point c) {
         this.c = c;
+    }
+
+    @Override
+    public double getPerimetrX() {
+        double perimetr = getDistance(this.a, this.b) +
+                getDistance(this.b, this.c) +
+                getDistance(this.a, this.c);
+        return perimetr;
+    }
+
+    @Override
+    public String getName() {
+        return "Triangle";
+    }
+
+    @Override
+    public double getSquareX() {
+        return (getDistance(this.b, this.c) *
+                getDistance(this.a, this.c)) / 2;
     }
 }

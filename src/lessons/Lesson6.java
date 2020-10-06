@@ -9,6 +9,6 @@ public class Lesson6 {
         Point b = new Point(0, 2);
         Point c = new Point(3, 0);
         Triangle triangle = new Triangle(a, b, c);
-        System.out.println("Perimetr: " + triangle.gaetPerimetr());
+        System.out.println("Perimetr: " + triangle.getPerimetrX());
     }
 }
